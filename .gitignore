@@ -1,0 +1,17 @@
+# pliki tymczasowe Django
+*.pyc
+*.pyo
+*.pyd
+*.swp
+*.bak
+*.sqlite3
+
+# katalogi Django
+__pycache__/
+migrations/
+
+# pliki konfiguracyjne
+settings.py
+
+# pliki statyczne
+staticfiles/
