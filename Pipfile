@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 django = "*"
+django-widget-tweaks = "*"
+install = "*"
+django-crispy-forms = "*"
 
 [dev-packages]
 

@@ -1,16 +1,6 @@
+
 from django import forms
-from django.contrib.auth.forms import UserCreationForm, UserChangeForm
 
-from .models import User
-
-class CustomUserCreationForm(UserCreationForm):
-
-    class Meta:
-        model = User
-        fields = ( "email",)
-
-class CustomUserChangeForm(UserChangeForm):
-
-    class Meta:
-        model = User
-        fields = ( "email",)
+class LoginForm(forms.Form):
+    email = forms.EmailField(widget=forms.EmailInput(attrs={'class': 'form-control'}))
+    password = forms.CharField(label='HASŁO' ,widget= forms.PasswordInput(attrs={'class': 'form-control'}))
