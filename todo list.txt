@@ -1,0 +1,3 @@
+- dodać imie i nazwisko do url po zalogowaniu
+- może dodać nazwę firmy /gabinetu
+- 
