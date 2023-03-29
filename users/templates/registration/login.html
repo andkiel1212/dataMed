@@ -25,11 +25,10 @@
                    <form action="{% url 'login' %}"  method="post" class="col-xl-10 col-sm-9 col-md-9 col-9 " style="margin: auto;" >
                         {% csrf_token %}
                         <div class="form-lable-group mlr-2 "> 
-                            {% render_field form.email type="email" placeholder="LOGIN" class="form-control" %}
+                            {% render_field form.email type="email" placeholder="e-mail" class="form-control" %}
                         </div> 
                         <div class="form-lable-group m-2"></div>
-                            {% render_field form.password type="password" placeholder="HASŁO" class="form-control" %}
-                            </label>
+                            {% render_field form.password type="password" placeholder="hasło"  class="form-control" %}
                         </div> 
                         
                         <p class="text-center mt-3" style="font-size: 0.8em;">Jeżeli nie masz konta: <a style="color: aquamarine;" href="{% url 'register'%}">Zarejestruj się.</a></p>

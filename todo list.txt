@@ -1,3 +1,22 @@
+Funkcjonalności główne: 
+    - utworzenie ganinetu
+    - utworzenie właściciela gabinetu oraz możliwość dodania pracowników
+    - generowanie PDF z wizyt
+        - w przyszłości inne dokumenty 
+    - genetowanie linku z kafelkami rezerwacji wizyt dla pojedynczych gabinetów
+    - terminarz dla placówki ?? czy to dobry pomysł
+    - terminarz dla pojedynczych lekarzy
+    - możliwość eliminowania konkretnych dat w roku
+    - generowanie czasu wizyty w formie modelu (możliwość zmianay dynamicznie)
+    - generowanie przerwy miedzy wizytami (możliwość zmianay dynamicznie)
+    - czas możliwy do odwołania wizyty
+    - wysyłka SMS
+        - różne czasy różnych smsów
+        - smsy zbiorcze
+    -dodanei zgód marketingowych, o wysyłaniu maila, o wysyłaniu sms
+    - dodanie możliwości dodawania zdjęć usg do wizyty
+
+    
 - dodać imie i nazwisko do url po zalogowaniu
 - może dodać nazwę firmy /gabinetu
-- 
+-  dodać API dla wyszykiwania adresów w polsce , https://api.ongeo.pl/price 

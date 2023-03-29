@@ -6,7 +6,7 @@ from django.utils import timezone
     
 class User(AbstractUser):
     username = None # override user from base user class / delete username
-    id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
+    id = models.CharField(primary_key=True, max_length=50)
     email = models.EmailField(verbose_name='Email', null=True, unique=True, max_length=100, db_index=True)
     first_name = models.CharField('first name', max_length=30, blank=True)
     last_name = models.CharField('last name', max_length=30, blank=True)
@@ -41,3 +41,7 @@ class User(AbstractUser):
 
 
 
+class Company(models.Model):
+    owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user")
+    
+    pass
