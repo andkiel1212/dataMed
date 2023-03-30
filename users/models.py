@@ -45,3 +45,6 @@ class Company(models.Model):
     owner = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user")
     
     pass
+
+class employee(models.Model):
+    pass
